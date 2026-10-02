@@ -1,0 +1,21 @@
+/* 1. Convierte la cabecera en una fila y separa los elementos a los extremos */
+.cabecera {
+    display: flex;
+    justify-content: space-between; /* Empuja el logo a la izquierda y el menú a la derecha */
+    align-items: center; /* Alinea todo verticalmente al centro */
+    padding: 20px 40px; /* Da un poco de espacio alrededor */
+}
+
+/* 2. Convierte el menú en otra fila para que los enlaces no caigan uno debajo del otro */
+.menu {
+    display: flex;
+    gap: 25px; /* Añade espacio entre cada palabra del menú */
+}
+
+/* 3. Estilo para que los enlaces se vean como texto normal, sin subrayado azul */
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* Para que la letra se parezca más al diseño original */
+}
